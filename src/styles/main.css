@@ -27,7 +27,6 @@ header{
     display: flex;
     margin: 0;
     padding: 0;
-    border-bottom: 2px rgb(247, 250, 250) solid;
 }
 
 .header_blockA{
@@ -91,15 +90,15 @@ header{
     top: 180px;
     width: 300px;
     height: 300px;
-    border-bottom: 3px solid aqua;
 }
 section{
     display: flex;
     height: max-content;
     width: 100%;
-    background: #fdfdfd;
+    background: #000;
 }
 .section_blockA{
+    background: linear-gradient(to right, #ffffff, rgb(247, 244, 244), rgba(0, 0, 0, 0.863)) ;
     padding: 80px;
     align-self: center;
     width: 1200px;
@@ -120,7 +119,7 @@ section{
 }
 .section_blockB{
     display: grid;
-    background: #fdfdfd;
+    background: black;
     justify-content: center;
     align-content: center;
     width: 100%;

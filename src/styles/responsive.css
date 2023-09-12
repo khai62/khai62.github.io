@@ -12,11 +12,9 @@
     }
     section{
         height: max-content;
-        overflow-x: hidden;
     }
     aside{
         height: max-content;
-        overflow-x: hidden;
     }
     aside h1{
         padding-top: 25px;
@@ -43,7 +41,6 @@
     }
     figure{
         height: max-content;
-        overflow-x: hidden;
     }
     .figure_blockA h1{
         padding-top: 25px;
@@ -59,7 +56,6 @@
     }
     footer{
         height: max-content;
-        overflow-x: hidden;
     }
     .footer_blockA a .fa-regular {
         display: none;
@@ -112,7 +108,6 @@
         top: 250px;
     }
     section{
-        overflow-x: hidden;
         height: max-content;
     }
     .section_blockA{
@@ -169,7 +164,6 @@
         margin-bottom: 10px;
     }
     footer{
-        overflow-x: hidden;
         display: inline;
     }
 
@@ -191,6 +185,11 @@
     }
     .footer_blockB .input{
         justify-self: center;
+    }
+
+    /* --------------- container 1 ------  */
+    .container1{
+        display: none;
     }
     
 
