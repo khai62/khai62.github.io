@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="/src/styles/responsive.css">
+    <title>Document</title>
+</head>
+<style>
+    .container2 {
+        padding: 10px;
+    }
+
+    .container3 {
+        display: grid;
+        grid-template-areas:
+            'item1 item1'
+            'item2 item3'
+            'item4 item5'
+            'item6 item6';
+    }
+
+    .item1 {
+        grid-area: item1;
+        background: #000000;
+    }
+
+    .item2 {
+        grid-area: item2;
+        background: #df0707;
+    }
+
+    .item3 {
+        grid-area: item3;
+        background: #0ac003;
+    }
+
+    .item4 {
+        grid-area: item4;
+        background: #038dc4;
+    }
+
+    .item5 {
+        grid-area: item5;
+        background: #af0a99;
+    }
+
+    .item6 {
+        grid-area: item6;
+        background: #e2b562;
+    }
+</style>
+
+<body>
+    <div class="container1">
+        <nav class="nav_blockA">
+            <a href="/index.html"><i class="fa-solid fa-user "></i><br><sub>profil</sub></a>
+            <a href="projek.html"><i class="fa-solid fa-code"></i><br><sub>projek</sub></a>
+            <a href="stack.html"><i class="fa-solid fa-cubes-stacked active"></i><br><sub>stack</sub></a>
+            <a href="kontak.html"><i class="fa-solid fa-phone"></i><br><sub>kontak</sub></a>
+        </nav>
+
+        <div class="container2">
+            <h2>Kumpulan Teknologi</h2>
+            <p>Saya lebih tertarik pada pengembangan aplikasi mobile</p>
+        </div>
+        <div class="container3">
+            <div class="item1">
+                <p>JavaScript</p>
+            </div>
+            <div class="item2">
+                <p>React Native</p>
+            </div>
+            <div class="item3">
+                <p>MongoDB</p>
+            </div>
+            <div class="item4">
+                <p>Node js</p>
+            </div>
+            <div class="item5">
+                <p>Express js</p>
+            </div>
+            <div class="item6">
+                <p>Git</p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

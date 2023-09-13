@@ -74,123 +74,162 @@
 
 
 
+/* ----------------- handphone--------------  */
+
+
 
 @media only screen and (max-width: 752px){
 
-    header{
-        height: 80vh;
-        display: grid;
-        justify-content: center;
-    }
-    .header_blockA h2{
+    .Container{
         display: none;
     }
-    .header_blockA img{
-        width: 300px;
+    .container1{
+        display: inline;
+        overflow: hidden;
     }
-    .svg-frame{
-        display: none;
-        margin-left: 0px;
-        margin-top: 0px;
-        justify-self: center;
-
+    .subcontainer1{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to bottom, #380202, rgb(20, 4, 4), black);
     }
-    .header_blockA .garis{
-        display: none;
+    .nav_blockA{
+        background: rgb(238, 248, 246);
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        height: 80px;
+        justify-content: space-around;
     }
-    .header_blockA{
-        display: grid;
-        justify-content: center;
-        margin-top: 190px;
+    .nav_blockA a{
+        display: inline-block;
+        text-decoration: none;
+        align-self: center;
+        color: black;
         
     }
-    .header_blockA img{
-        top: 250px;
+    
+    .nav_blockA i{
+        font-size: 20px;
+        padding: 5px 25px 5px 25px;
+        border-radius: 18px;
     }
-    section{
-        height: max-content;
+    .nav_blockA .active{
+        background: rgba(0, 162, 255, 0.356);
     }
-    .section_blockA{
+    .nav_blockA sub{
+        font-family: sans-serif;
+    }
+
+    /* -------------------  */
+    button{
+        background: transparent;
+        border: none;
+    }
+    .subcontainer1_blockA{
+        display: grid;
+        justify-content: flex-end;
+        height: 45px;
+        padding-right: 20px ;
+        align-content: end;
+    }
+    .subcontainer1_blockA i{
+        color: white;
+        font-size: 25px;
+    }
+    .subcontainer1_blockB{
+        display: grid;
+        width: 100%;
+        justify-content: center;
+
+    }
+    .subcontainer1_blockB img{
+        width: 300px;
+
+    }
+    .subcontainer1_blockC{
+        display: grid;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .subcontainer1_blockC img{
+        justify-self: end;
+        margin-right: 10px;
+        border-radius: 50%;
+        margin-top: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    .subcontainer1_blockD{
+        box-sizing: border-box;
+        width: 100%;
+        color: white;
+    }
+    .subcontainer1_blockD h2{
         text-align: center;
     }
-    .section_blockA img{
-        width: 100px;
-        height: 100px;
+    .subcontainer1_blockD p{
+        text-align: center;
     }
-    .section_blockB{
-        position: absolute;
-        top: 150px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: transparent;
+    .subcontainer1_blockE{
+        box-sizing: border-box;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'h3E_blockA h3E_blockB h3E_blockC ';
+        justify-content: space-around;
+        margin-top: 30px;
+        color: white;
     }
-    .aside_subBlockA{
-        width: 50px;
+    .h3E_blockA {
+        grid-area: h3E_blockA ;
+        text-align: center;
     }
-    .aside_subBlockB{
-        width: 80px;
-        margin-left: 20px;
+    .h3E_blockB {
+        grid-area: h3E_blockB;
+        text-align: center;
+        border-left: 1px solid aqua;
+        border-right: 1px solid aqua;
     }
-    .aside_subBlockC{
+    .h3E_blockC {
+        grid-area: h3E_blockC;
+        text-align: center;
+    }
+    .subcontainer1_blockF{
+        display: grid;
+        justify-content: center;
+        color:white;
+        width: 100%;
+        padding: 20px;
+        height: max-content;
+        margin-top: 30px;
+        box-sizing: border-box;
+    }
+    .subcontainer1_blockF p{
+        text-align: center;
+    }
+    .subcontainer1_blockF a{
+        justify-self: center;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        padding: 8px 20px;
+        background: aqua;
+        box-sizing: border-box;
+        border-radius: 20px;
+        margin-top: 50px;
         width: 200px;
     }
-    .aside_subBlockD{
-        width: 145px;
-    }
-    .aside_subBlockE{
-        width: 50px;
-        margin-left: 10px;
-    }
-    .aside_subBlockF{
-        width: 240px;
-    }
-    figure{
-        overflow-x: hidden;
-        display: grid;
-        height: max-content;
-        padding: 20px;
-        justify-content: center;
-
-    }
-    .figure_blockA h1{
-        justify-self: center;
-    }
-    .figure_blockB{
-        display: inline;
-        padding-top: 20px ;
-        text-align: center;
-    }
-    .figure_blockB a img{
-        margin-bottom: 10px;
-    }
-    footer{
-        display: inline;
+    .subcontainer1_blockF a:hover{
+        background: rgba(2, 58, 58, 0.747);
+        color: white;
     }
 
-    .footer_blockA{
-        text-align: center;
-        gap: 0;
-        padding: 0;
-        padding-top:20px ;
-        align-content: end;
-        
-    }
-    .footer_blockA a{
-        display: none;
-    }
-    .footer_blockB{
-        padding-top: 25px;
-        text-align: center;
-        justify-content: center;
-    }
-    .footer_blockB .input{
-        justify-self: center;
-    }
 
-    /* --------------- container 1 ------  */
-    .container1{
-        display: none;
-    }
+
     
 
 

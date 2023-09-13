@@ -17,8 +17,10 @@
 body{
   max-width: 100%;
   overflow-x: hidden;
-  background: #000;
   font-family:Nathan TTF ;
+}
+.Container{
+  background: #000;
 }
 header{
     width: 100%;
