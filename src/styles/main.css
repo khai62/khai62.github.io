@@ -25,7 +25,7 @@ body{
 header{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #380202, black, black);
+    background: linear-gradient(to right,  #380202, black, black);
     display: flex;
     margin: 0;
     padding: 0;
@@ -83,8 +83,12 @@ header{
     height: 500px;
 }
 .header_blockB .imgA{
-    width: 550px;
-    height: 500px;
+    width: 500px;
+    height: 443px;
+    opacity: 0.6;
+}
+.header_blockB .imgA:hover{
+  opacity: 1;
 }
 .header_blockB .imgB{
     position: absolute;
@@ -100,7 +104,7 @@ section{
     background: #000;
 }
 .section_blockA{
-    background: linear-gradient(to right, #ffffff, rgb(247, 244, 244), rgba(0, 0, 0, 0.863)) ;
+    background: white;
     padding: 80px;
     align-self: center;
     width: 1200px;
@@ -121,7 +125,7 @@ section{
 }
 .section_blockB{
     display: grid;
-    background: black;
+    background: white;
     justify-content: center;
     align-content: center;
     width: 100%;
@@ -222,6 +226,10 @@ aside h1 span{
   align-self: center;
   justify-self: center;
 }
+.aside_blockA .spanA:hover{
+  background: rgb(238, 224, 29);
+  color: black;
+}
 .aside_blockA .spanB{
   color: aqua;
   padding-left: 20px;
@@ -236,6 +244,10 @@ aside h1 span{
   margin-right: -145px;
   margin-bottom: -40px;
 
+}
+.aside_blockA .spanB:hover{
+  background: aqua;
+  color: black;
 }
 .aside_blockA .spanC{
   color: #0bca4b;
@@ -252,6 +264,10 @@ aside h1 span{
   justify-self: center;
 
 }
+.aside_blockA .spanC:hover{
+  background: #0bca4b;
+  color: black;
+}
 .aside_blockA .spanD{
   color: #19ad05;
   margin-top: -15px;
@@ -265,6 +281,10 @@ aside h1 span{
   font-weight: bold;
   align-self: center;
   justify-self: center;
+}
+.aside_blockA .spanD:hover{
+  background: #19ad05;
+  color: black;
 }
 .aside_blockA .spanE{
   color: #ffff;
@@ -280,6 +300,10 @@ aside h1 span{
   margin-right: -116px;
   margin-bottom: -40px;
 }
+.aside_blockA .spanE:hover{
+  background: #ffff;
+  color: black;
+}
 .aside_blockA .spanF{
   color: #ce4c4c;
   margin-top: -17px;
@@ -293,6 +317,10 @@ aside h1 span{
   font-weight: bold;
   align-self: center;
   justify-self: center;
+}
+.aside_blockA .spanF:hover{
+  background: #ce4c4c;
+  color: black;
 }
 
 figure{
@@ -322,7 +350,7 @@ figure{
 
 .figure_blockB a img{
   width: 200px;
-  height: max-content;
+  height: 300px;
   border-radius: 10px;
   border: 1px solid black;
 }
