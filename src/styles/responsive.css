@@ -90,6 +90,8 @@
     .subcontainer1{
         width: 100%;
         height: 100vh;
+        padding-bottom: 50px;
+        padding-top: 40px;
         background: linear-gradient(to bottom, #380202, rgb(20, 4, 4), black);
     }
     .nav_blockA{
@@ -132,21 +134,25 @@
         display: grid;
         justify-content: flex-end;
         height: 45px;
-        padding-right: 20px ;
+        margin-top: 20px;
+        padding-right: 30px ;
         align-content: end;
+        box-sizing: border-box;
     }
     .subcontainer1_blockA i{
         color: white;
-        font-size: 25px;
+        font-size: 30px;
     }
     .subcontainer1_blockB{
         display: grid;
         width: 100%;
         justify-content: center;
+        box-sizing: border-box;
 
     }
     .subcontainer1_blockB img{
-        width: 300px;
+        width: 400px;
+        height: max-content;
 
     }
     .subcontainer1_blockC{
@@ -156,7 +162,7 @@
     }
     .subcontainer1_blockC img{
         justify-self: end;
-        margin-right: 10px;
+        margin-right: 20px;
         border-radius: 50%;
         margin-top: 10px;
         width: 35px;
@@ -181,7 +187,7 @@
         grid-template-areas: 
         'h3E_blockA h3E_blockB h3E_blockC ';
         justify-content: space-around;
-        margin-top: 30px;
+        margin-top: 40px;
         color: white;
     }
     .h3E_blockA {
@@ -207,6 +213,7 @@
         height: max-content;
         margin-top: 30px;
         box-sizing: border-box;
+        margin-top: 20px;
     }
     .subcontainer1_blockF p{
         text-align: center;
