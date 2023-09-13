@@ -101,7 +101,7 @@ section{
     display: flex;
     height: max-content;
     width: 100%;
-    background: #000;
+    background: white;
 }
 .section_blockA{
     background: white;
