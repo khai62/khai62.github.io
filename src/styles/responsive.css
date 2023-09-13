@@ -1,5 +1,5 @@
 
-@media only screen and (max-width: 950px) {
+/* @media only screen and (max-width: 950px) {
     header p{
         display: none;
     }
@@ -68,7 +68,7 @@
         padding-bottom: 50px;
     }
 
-}
+} */
 
 
 
@@ -78,7 +78,7 @@
 
 
 
-@media only screen and (max-width: 884px){
+@media only screen and (max-width: 950px){
 
     .Container{
         display: none;
