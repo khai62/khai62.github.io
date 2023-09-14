@@ -1,19 +1,25 @@
-const bagikanButton = document.getElementById('bagikanButton');
+function handleSearch() {
+  const searchInput = document.getElementById('searchInput');
+  const searchText = searchInput.value.toLowerCase();
+  const imageContainer = document.getElementById('imageContainer');
+  const links = imageContainer.getElementsByTagName('a');
 
-if (navigator.share) {
-  bagikanButton.addEventListener('click', async () => {
-    try {
-      await navigator.share({
-        title: 'profile',
-        text: '',
-        url: '',
-        // files: [''],
-      });
-      console.log('Berbagi berhasil');
-    } catch (error) {
-      console.error('Gagal berbagi', error);
+  for (let i = 0; i < links.length; i++) {
+    const img = links[i].querySelector('img');
+    if (img) {
+      const altText = img.getAttribute('alt').toLowerCase();
+      if (altText.includes(searchText)) {
+        links[i].style.display = 'block'; 
+      } else {
+        links[i].style.display = 'none';
+      }
     }
-  });
-} else {
-  bagikanButton.style.display = 'none'; 
+  }
 }
+
+
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', handleSearch);
+
+const searchButton = document.getElementById('searchButton');
+searchButton.addEventListener('click', handleSearch);
